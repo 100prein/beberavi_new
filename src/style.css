@@ -1,326 +1,276 @@
+/*ALL Sections*/
 
 * {
     font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 300;
 }
 
-
-.intro_img {
-    background-image: url("press.jpeg");
-    background-size: cover;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.a_word {
-    color: white;
-    font-size: 50px;
+html {
+    background-color: #ABB8A0;
 }
 
 /*Navigation Section*/
-.logo {
-    padding: 20px;
+.menu {
+    margin-top: 150px;
 }
 
-
-.nav_list {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-between;
-    font-size: 20px;
-}
-
-.nav_list_items  {
-    padding: 10px;
-    
+.menu-toggle {
+    display: none;
 }
 
 .nav {
+    display: inline;
+}
+
+.logo {
+    position:absolute;
+    margin-top: -140px;
+    background-color: #ABB8A0;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.nav_list {
+    padding: 10px;
     display: flex;
+    list-style-type: none;
     justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav_list_items {
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 600;
 }
 
 a {
     text-decoration: none;
     color: #1a1a1a;
+    transition: 0.5s ease;
+}
+
+nav:hover {
+    background-color: white;
     transition: 0.3s ease;
 }
 
-a:hover,
-a.active {
-    color: #088178;
+nav:hover li a {
+    color: brown;
+    margin-top: 40px;
+    /*text-decoration: underline;*/
+  }
+
+/*Introduction Section*/
+
+.signature {
+    font-family: 'Dancing Script', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    align-items: center;
 }
 
-/*Image and a powerful word*/
-.a_word_section{
-    text-align: center;
-    padding-top: 50px;
-}
-
-.a_word {
-    font-size: 100px;
-}
-
-/*Links to websites and social media */
-footer {
-    text-align: center;
-    padding: 80px;
-}
-
-.links {
-    display : inline;
-}
-
-.social_media {
+/*.intro_img {
+    width: 100%;
+    height: 600px;
     margin: 20px;
-}
-
-/*School Blazers*/
-
-.school_blazers {
-    background-color: black;
-    height: 500px;
-}
-
-/*Work with us Page */
-.intro_img0 {
-    background-image: url("hard_workers.jpeg");
-    background-size: cover;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.intro_img1 {
-    background-image: url("hands_sewing_closeup.png");
-    background-size: cover;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.intro_img2 {
-    background-image: url("cultural_women.jpg");
-    background-size: cover;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.intro_img3 {
-    background-image: url("tailors.jpg");
-    background-size: cover;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.s2{
-	background-color: var(--secondaryColor);
-	border-bottom:1px solid var(--borderColor);
-	overflow:auto;
-}
-
-.main_container{
-	width: 1200px;
-	margin: 0 auto;
-}
-
-#contact-form{
-	display: block;
-	max-width: 600px;
-	margin: 0 auto;
-	border: 1px solid var(--borderColor);
-	padding: 15px;
-	border-radius: 5px;
-	background-color: var(--mainColor);
-	margin-bottom: 50px;
-
-}
-
-#contact-form label{
-	line-height: 2.7em;
-}
-
-#contact-form textarea{
-	min-height: 100px;
-	font-size: 14px;
-}
-
-
-.input-field{
-	width: 100%;
-	padding-top: 10px;
-	padding-bottom:10px; 
-	
-	border-radius: 5px;
-	border:1px solid black;
-	font-size: 14px;
-}
-
-
-#submit-btn{
-	margin-top: 10px;
-	width: 100%;
-	padding-top: 10px;
-	padding-bottom: 10px; 
-	border:none;
-}
-
-/*Responsiveness*/
-
-@media screen and (max-width: 1200px){
-	.main-container{
-		width: 95%;
-	}
-}
-
-@media screen and (max-width: 800px){
-	.intro-wrapper{
-		grid-template-columns: 1fr;
-		grid-template-areas: 
-			'nav-wrapper'
-			'left-column'
-			'right-column'
-		;
-	}
-
-	.right-column{
-		justify-content: center;
-	}
-
-}
-
-@media screen and (max-width: 400px){
-	#preview-shadow{
-		max-width: 280px;
-		height: 180px;
-		padding-left: 10px;
-		padding-top: 10px;
-	}
-
-	#preview{
-		width: 280px;
-
-	}
-
-}
-/*Bebe Ravi Collection*/
-.models {
-	padding: 10px;
-}
-/*.showcase {
-	display: flex;
+    padding: 0px;
+    justify-content: space-between;
+    margin-left: 150px;
 }*/
 
-/* Our Mission */
-.intro_img4 {
-	background-image: url("mission_possible.jpeg");
-    background-size: cover;
+.intro_section {
+    background-image: url("./src/hands_sewing.jpeg");
+    padding-top: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.intro_subsection {
+    
+    padding: 10px;
+    display: flex;
+}
+
+.link_button {
+    background-color: #DBEBCC;
+    text-align: center;
+    padding: 20px;
+    width: 80px;
+    height: 25px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.link_button:hover {
+    background-color: #646B5D;
+    color: white;
+    transition: 0.5s ease;
+}
+
+
+/*Footer Section*/
+footer{
+    background-color: #646B5D;
+}
+
+.google_map {
+    width:600;
+    height:450;
+}
+
+.footer_section {
+    background-color: #646B5D;
+    display: flex;
+    margin: 50px;
+    font-size: 20px;
+}
+
+.footer_info {
+    list-style-type: none;
+}
+
+.list_header_footer {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.footer_info:hover 
+a:hover  {
+    color: white;
+    transition: 0.5s ease;
+}
+
+.footer_info_social li {
+    list-style-type: none;
+    margin: 20px;
+    display: flex;
+}
+
+.footer_info_social:hover
+a:hover {
+    color: white;
+    transition: 0.5s ease;
+    margin: 10px;
+}
+
+/*Collection Section*/
+
+.collection_section {
+    display: inline;
+    align-content: center;
+    height: 800px;
+    width: 100%;
+}
+
+.collection_box {
+    margin: 0px;
+}
+
+.collection_text {
+    padding: 20px;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Dancing Script', sans-serif;
+}
+
+.collection_box_items {
+    width: 350px;
     height: 500px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    padding: 10px;
 }
 
-.mission {
-	margin: 150px
+.collection_box_items2 {
+    width: 450px;
+    height: 500px;
+    padding: 10px;
 }
 
-.w_worker {
-	padding: 30px;
-    width: 300px;
+/*.collection_box_items {
+    justify-content: space-around;
+    width: 400px;
+    height: 300px;
+    object-fit: none;
+    object-position: 100% 50% center; 
+    margin: 30px;
+}*/
+
+.link_button2 {
+    padding: 20px;
+    text-align: center;
+    width: 100px;
+    border-radius: 10px;
+    margin: 40px;
+}
+
+a:hover 
+.link_button2:hover {
+    color:white;
+    background-color: #ABB8A0;
+    transition: 0.5s ease;
+}
+
+/*Our Quality*/
+
+.icon_quality {
+    width: 30px;
+    height: 30px;
+}
+
+.quality_section {
     height: 400px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.our_mission {
-	display: flex;
+.icon {
+    padding: 20px; 
 }
 
-.mission_paragraph {
-	font-weight: 300;
-	font-size: 30px;
-}
-
-.intro_img5 {
-	background-image: url("founder.jpg");
-    background-size: cover;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.founder {
-	display: flex;
-	font-size: 20px;
-}
-
-.siamanda {
-	padding: 20px;
-	margin: 50px;
-	font-weight: 600;
-	text-align: left;
-	padding-left: 0px;
-}
-
-.founder p {
-	margin: 50px;
-}
-
-.button_orphanage {
-	font-size: 25px;
-	align-content: center;
-	background-color: black;
-	width : 500px;
-	padding: 10px;
-	margin: 0 auto;
-}
-
-.text_button {
-	color: white;
-	text-align: center;
-}
-
-span {
-	font-weight: bold;
-}
-
-/*School Blazer*/
-
-.media_school_blazer {
-	margin: 50px;
-}
-
-/*Press*/
-
-.press_section {
-	padding: 50px;
-}
-
-.youtube_section {
-	padding: 50px;
-}
-.intro_img7 {
-	background-image: url("events.jpeg");
-    background-size: cover;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-/*SHOP*/
-.intro_img8 {
-	background-image: url("shop.jpg");
-    background-size: cover;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.shop_section{
-	font-size: 40px;
-	padding: 30px;
-	text-align: center;
+.icon_text {
+    text-align: center;
+    font-size: 20px;
 }
 
 /*Mobile Version*/
+@media only screen and (max-width: 1000px){
+    /*Collection Section*/
+    .collection_section {
+        align-content: center;
+        height: 5500px;
+    }
+    .collection_box_items {
+        width: 100%;
+        height: 100%;
+    }
+    .collection_box_items2{
+        width: 100%;
+        height: 100%;
+    }
+    /*Our Quality Section*/
+    .quality_section {
+        margin: 0px;
+        height: 500px;
+    }
+    /*Footer Section*/
+    .footer_section {
+        display: inline;
+        margin: 0%;
+    }
+    footer {
+
+        display: inline;
+        height: 3000px;
+    }
+    
+    .footer_info {
+        font-size: 80px;
+    }
+    .footer_info_social {
+        font-size: 80px;
+    }
+    .icon {
+        display: flex;
+        margin-top: 100px;
+    }
+}
