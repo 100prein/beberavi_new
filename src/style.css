@@ -65,8 +65,8 @@ nav:hover li a {
 
 .signature {
     font-family: 'Dancing Script', sans-serif;
-    font-weight: 600;
-    font-size: 40px;
+    font-weight: 300;
+    font-size: 100px;
     align-items: center;
 }
 
@@ -79,15 +79,52 @@ nav:hover li a {
     margin-left: 150px;
 }*/
 
-.intro_section {
-    background-image: url("./src/hands_sewing.jpeg");
-    padding-top: 20px;
-    height: 100%;
+.intro_img {
+    background-image: url("./hands_sewing.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     width: 100%;
+    height: 500px;
+    text-align: center;
+    color:white;
+}
+
+.intro_img_shop {
+    background-image: url("./shop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color:white;
+}
+.intro_img_collections {
+    background-image: url("./shop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color:white;
+}
+
+
+
+.intro_img_mission {
+    background-image: url("./mission_possible.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color:white;
 }
 
 .intro_subsection {
-    
     padding: 10px;
     display: flex;
 }
@@ -164,7 +201,7 @@ a:hover {
 }
 
 .collection_box {
-    margin: 0px;
+    display: flex;
 }
 
 .collection_text {
@@ -177,13 +214,13 @@ a:hover {
 .collection_box_items {
     width: 350px;
     height: 500px;
-    padding: 10px;
+    margin: 5px;
 }
 
 .collection_box_items2 {
-    width: 450px;
-    height: 500px;
-    padding: 10px;
+    width: 503px;
+    height: 526px;
+    margin: 5px;
 }
 
 /*.collection_box_items {
@@ -195,18 +232,27 @@ a:hover {
     margin: 30px;
 }*/
 
-.link_button2 {
+/*.link_button2 {
     padding: 20px;
     text-align: center;
     width: 100px;
     border-radius: 10px;
     margin: 40px;
+}*/
+.link_button2 {
+    background-color: #DBEBCC;
+    text-align: center;
+    padding: 20px;
+    width: 100px;
+    height: 25px;
+    margin: 10px;
+    border-radius: 10px;
 }
 
 a:hover 
 .link_button2:hover {
-    color:white;
-    background-color: #ABB8A0;
+    background-color: #646B5D;
+    color: white;
     transition: 0.5s ease;
 }
 
@@ -234,10 +280,25 @@ a:hover
 
 /*Mobile Version*/
 @media only screen and (max-width: 1000px){
+    /*Navigation Section*/
+    .nav {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+
     /*Collection Section*/
+    .signature {
+        font-size: 100px;
+        color: white;
+    }
     .collection_section {
         align-content: center;
         height: 5500px;
+    }
+    .collection_text{
+        font-size: 100px;
     }
     .collection_box_items {
         width: 100%;
@@ -246,6 +307,14 @@ a:hover
     .collection_box_items2{
         width: 100%;
         height: 100%;
+    }
+    .collection_box {
+        display: inline;
+    }
+    .link_button2 {
+        font-size: 50px;
+        width: 400px;
+        height: 65px;
     }
     /*Our Quality Section*/
     .quality_section {
@@ -257,6 +326,12 @@ a:hover
         display: inline;
         margin: 0%;
     }
+    .intro_img {
+        background-size: contain;
+        background-attachment: fixed;
+    }
+
+
     footer {
 
         display: inline;
@@ -273,4 +348,135 @@ a:hover
         display: flex;
         margin-top: 100px;
     }
+    /*Brand Section not functioning*/
+    .shopping_district {
+        display: block;
+        margin: 50px;
+    }
+    .brand_stores {
+        width: 515px;
+        height: 712px;
+    }
+}
+
+/*Career Page*/
+.intro_img_career {
+    background-image: url("./hard_workers.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color:white;
+}
+.intro_img_career2 {
+    background-image: url("./hands_sewing_closeup.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color:white;
+}
+.intro_img_career3 {
+    background-image: url("./cultural_women.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color:white;
+}
+.intro_img_career4 {
+    background-image: url("./tailors.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color:white;
+}
+
+.career_text {
+    margin: 10px;
+    font-size: 30px;
+}
+
+/*Brand Partners Page*/
+.intro_img_partners {
+    background-image: url("./partners.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color: brown;
+}
+.intro_img_partners2 {
+    background-image: url("./partners2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color: white;
+}
+.intro_img_partners3 {
+    background-image: url("./partners3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color: white;
+}
+.shopping_district {
+    margin: 0px;
+    background-color: white;
+}
+.shopping_district ul {
+    display: flex;
+    list-style-type: none;
+}
+.shopping_district ul li {
+    margin: 20px;
+    
+}
+.shop_row {
+    margin: 0px;
+    text-align: center;
+}
+.brand_stores {
+    width: 400px;
+    height: 510px;
+    object-fit: contain;
+    object-position: 90% 100% center; 
+}
+.brands_section {
+    margin: 20px;
+    background-color: white;
+}
+.brands {
+    width: 270px;
+    height: 150px;
+    margin: 10px;
+}
+
+/*School Blazer Page*/
+.intro_img_blazer {
+    background-image: url("./partners3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color:white;
 }
